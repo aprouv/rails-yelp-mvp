@@ -1,0 +1,15 @@
+@import "bootstrap/scss/bootstrap";
+
+.container {
+  width: 85%;
+  margin-top: 20px;
+}
+
+.button {
+  margin-top: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
