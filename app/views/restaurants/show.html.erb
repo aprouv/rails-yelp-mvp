@@ -12,7 +12,8 @@
   </ul>
 
    <h3>Add a review</h3>
-    <div class="form">
+   <div class="form-floating mb-3">
+    <div >
       <%= simple_form_for [ @restaurant, @review ] do |f| %>
         <%= f.input :rating, collection: 0..5 %>
         <%= f.input :content %>
@@ -20,8 +21,9 @@
     <div class="buttons">
       <%= f.submit "Submit review", class: "btn btn-primary" %>
     <% end %>
-      <div class="button">
+      <div>
         <%= link_to "Back to list", restaurants_path, class: "btn btn-primary"%>
       </div>
+    </div>
     </div>
 </div>
